@@ -1,0 +1,46 @@
+/* Judah Vickers, Lab10, March 9/10, 2026 */
+@charset "utf-8";
+
+html {
+    background-color: black;
+    color: #e19c3d;
+    padding: 1%;
+    font-size: larger;
+}
+
+header {
+    background-image: linear-gradient(to top, black, #e19c3d);
+}
+
+header nav ul a {
+    color: #737373;
+}
+
+header nav {
+    border: 1px solid #737373;
+}
+
+header nav ul li a:hover,
+.bottom li a:hover {
+    color: #fff;
+}
+
+.bottom li a,
+a {
+    color: #737373;
+}
+
+.on {
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+
+.gal,
+.bottom {
+    list-style-type: none;
+}
+
+footer {
+    background-image: linear-gradient(to top, #e19c3d, black);
+    color: black;
+}

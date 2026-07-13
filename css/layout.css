@@ -1,0 +1,163 @@
+/* Judah's portfolio with Copilot AI, 2026 */
+:root {
+  /*--------------- layout tokens ----------------------------*/
+  --container-max: 1100px;
+  --gutter: 1.25rem;
+  --project-gap: 2rem;
+  --image-aspect: 16 / 9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+/*------------------ Header and footer -------------------------*/
+.site-header {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.site-title {
+  margin: 0;
+  font-size: 1.75rem;
+  letter-spacing: -0.02em;
+}
+
+.site-bio {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+}
+
+/* Projects list */
+.section-heading {
+  margin: 1.5rem 0;
+  font-size: 1.25rem;
+}
+
+/*----------- Each project is a two-column layout on wide screens -*/
+.project {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--project-gap);
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.03);
+}
+
+/*------------- Image link and image sizing ---------------------*/
+.project-image-link {
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+  text-decoration: none;
+  padding: 0.75rem;
+  border-radius: 10px;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* -------------- VIDEO ----------------------------------- */
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/*--------------- Text content ------------------------------*/
+.project-content {
+  padding: 0.25rem 0;
+}
+
+.project-title {
+  margin: 0 0 0.25rem;
+  font-size: 1.125rem;
+}
+
+.project-tagline {
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+  color: var(--accent-weak);
+}
+
+.project-desc {
+  margin: 0 0 0.75rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+/*---------------- Link style --------------------------------------*/
+.project-link {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/*---------------- Hover and focus states -----------------------------*/
+.project-image-link:hover,
+.project-image-link:focus {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+  outline: none;
+}
+
+/*------------------ Desktop two-column layout --------------------------*/
+@media (min-width: 820px) {
+  .project {
+    grid-template-columns: 42% 1fr;
+  }
+}
+
+/*---------------- Small screens: stack with image on top (default) ------*/
+@media (max-width: 819px) {
+  .site-title {
+    font-size: 1.5rem;
+  }
+}
+
+/*-------------------- Accessibility: focus visible ---------------------*/
+:focus {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+/*---------------------- Reduced motion preference ----------------------*/
+@media (prefers-reduced-motion: reduce) {
+
+  .project-image-link,
+  .project-image-link:hover,
+  .project-image-link:focus {
+    transition: none;
+    transform: none;
+  }
+}

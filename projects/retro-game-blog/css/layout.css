@@ -1,0 +1,111 @@
+/* Judah Vickers, Lab 9, March 4, 2026  */
+@charset "utf-8";
+
+/* body = ALL PAGES: */
+body {
+    width: 80%;
+    min-width: 780px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* top = ALL PAGES : */
+header img {
+    width: 45%;
+    display: block;
+    margin: auto;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+/* middle = ALL PAGES */
+main {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+h1 {
+    width: 30%;
+    display: block;
+    margin: auto;
+    padding-bottom: 1%;
+}
+
+h3 {
+    padding: 1%;
+}
+
+p,
+article,
+blockquote {
+    padding: 1%;
+    padding-left: 5%;
+    padding-right: 7%;
+    text-align: justify;
+}
+
+section {
+    padding: 1%;
+}
+
+/* middle on Index & Media */
+.meat {
+    display: flex;
+}
+
+/* middle for MEDIA*/
+
+.meat article {
+    padding-bottom: 3%;
+}
+
+.meat section img {
+    width: 100%;
+}
+
+/* .meat section {
+    height: 90%;
+} */
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2%;
+}
+
+/* image on EVOLUTION and FUTURE*/
+.center {
+    display: block;
+    margin: auto;
+}
+
+/* middle on EVOLUTION only*/
+
+.evo {
+    display: flex;
+}
+
+.evo section {
+    width: 25%;
+    padding-top: 5%;
+}
+
+.evo section h2 {
+    padding-bottom: 3%;
+}
+
+/* Footer */
+footer {
+    padding-top: 10%;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+}

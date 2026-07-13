@@ -1,0 +1,54 @@
+
+/* Layout and spacing */
+
+.hero {
+    max-width: 800px;
+    margin: 4rem auto 3rem;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.intro {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.gallery {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.category {
+    margin-bottom: 4rem;
+}
+
+.category-desc {
+    margin-bottom: 2rem;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.photo-card {
+    background: var(--light-gray);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px var(--shadow);
+    padding: 0;
+    overflow: hidden; /* prevents image spillover */
+}
+
+.photo-card img {
+    width: 100%;        /* image fills the card width */
+    height: auto;       /* keeps natural proportions */
+    display: block;     /* removes weird inline spacing */
+    object-fit: cover;  /* optional: crops slightly for uniformity */
+}
+
+.placeholder {
+    background: var(--light-gray);
+}

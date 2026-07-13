@@ -1,0 +1,91 @@
+/* Judah's portfolio with Copilot AI, 2026 */
+
+/*-------- Dark jewel palette with warm fire accent ------------*/
+:root {
+  /* Primary palette */
+  --deep-teal: #0f3b3b;
+  --garnet: #7b1f2a;
+  --amber: #ffb86b;
+  --midnight: #071026;
+  --fire-accent: #ff6f3c;
+
+  /*----------------- Derived tokens ----------------------------*/
+  --bg: linear-gradient(180deg, var(--midnight) 0%, #071428 100%);
+  --surface: rgba(255, 255, 255, 0.03);
+  --muted: rgba(255, 255, 255, 0.75);
+  --accent: var(--amber);
+  --accent-weak: rgba(255, 184, 107, 0.9);
+  --text: #fff;
+  --focus: rgba(255, 111, 60, 0.95);
+}
+
+/*---------------- Page background and text --------------------*/
+body {
+  background: var(--bg);
+  color: var(--text);
+  background-attachment: fixed;
+}
+
+/*----------------- Containers and surfaces -------------------*/
+.container {
+  background: transparent;
+}
+
+/*-------------------- Headings -----------------------------*/
+h1,
+h2,
+h3 {
+  color: var(--text);
+}
+
+/*------------------- Muted text ---------------------------*/
+.site-bio,
+.project-desc,
+.site-footer p {
+  color: var(--muted);
+}
+
+/*---------------- Accent elements --------------------------*/
+.project-tagline {
+  color: var(--accent-weak);
+}
+
+/*----------------- Image & Frame Style -----------------------*/
+.project-image-link {
+  background: rgba(255, 255, 255, 0.04);
+  /* subtle jewel-tone glow */
+  box-shadow: 0 0 12px rgba(255, 111, 60, 0.25);
+  /* firelight */
+}
+
+/*--------------- Links and buttons ---------------------------*/
+a {
+  color: var(--accent);
+  transition: color 160ms ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--fire-accent);
+}
+
+/*--------------- Project link as a subtle button ---------------*/
+.project-link {
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  color: var(--accent);
+}
+
+/*--------------- Header and footer styling ------------------*/
+.site-header,
+.site-footer {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), transparent);
+}
+
+/*----------------- Small utility -----------------------------*/
+.site-footer p {
+  font-size: 0.9rem;
+  margin: 1rem 0 0;
+}

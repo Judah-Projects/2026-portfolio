@@ -1,0 +1,98 @@
+/* Judah Vickers, Lab 14, March 20, 2026*/
+@charset "utf-8";
+
+body {
+    width: 80%;
+    min-width: 320px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ----------Page PADDING--------- */
+header,
+main,
+footer {
+    padding: 3%;
+}
+
+/* -----------Header Grid----------*/
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+/* -----------Top NAV------------- */
+header nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+header nav ul li {
+    margin-top: 100%;
+    font-size: x-large;
+}
+
+.on {
+    text-decoration: underline;
+    text-decoration-color: #f8ecd5;
+}
+
+/* -----------Headings----------- */
+h1 {
+    text-align: center;
+}
+
+/* -----------Paragraphs---------- */
+p {
+    text-align: justify;
+}
+
+/* -------Targeted Padding-------- */
+h1,
+h2,
+p {
+    padding: 1%;
+}
+
+fieldset {
+    padding: 3%;
+}
+
+/* ------------FORMES------------- */
+fieldset {
+    margin-top: 3%;
+}
+
+/* --------------Footer----------- */
+footer {
+    margin-top: 10%;
+}
+
+/* --------Responsive Design------ */
+@media (min-width:801px) {
+    fieldset {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5%;
+    }
+}
+
+@media (max-width: 800px) {
+    fieldset {
+        margin-top: 1%;
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+
+    header nav ul {
+        display: list-item;
+    }
+
+    header nav ul li {
+        margin-top: 9%;
+    }
+
+    header img {
+        width: 100%;
+    }
+}

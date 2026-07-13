@@ -1,0 +1,48 @@
+/* Judah Vickers, Lab 9, March 4, 2026 */
+@charset "utf-8";
+
+/* Style of ALL pages: */
+html {
+    background-color: black;
+    font-size: large;
+}
+
+body {
+    color: #dc4d9c;
+}
+
+header nav ul a,
+footer {
+    color: #25ebfb;
+}
+
+.on {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+.link {
+    color: #eeeaea;
+}
+
+h3 {
+    text-decoration: #25ebfb underline;
+}
+
+.link:hover,
+.f-link:hover {
+    color: yellow;
+}
+
+/* index and evolution pages */
+#home,
+.center {
+    border: 1px solid #dc4d9c;
+}
+
+/* on Index page only */
+.glow {
+    color: #25ebfb;
+    animation: glow 1s ease-in-out infinite alternate;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+}

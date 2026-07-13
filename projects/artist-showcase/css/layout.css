@@ -1,0 +1,93 @@
+/* Judah Vickers, Lab10, March 9/10, 2026 */
+@charset "utf-8";
+
+body {
+    width: 80%;
+    min-width: 780px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header img {
+    width: 45%;
+    display: block;
+    margin: auto;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+img {
+    padding: 2%;
+}
+
+h1,
+h2,
+h3 {
+    padding-left: 1%;
+    padding-top: 5%;
+}
+
+p {
+    line-height: 1.5;
+    margin-top: 1%;
+    text-align: justify;
+    padding: 1%;
+}
+
+.center {
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 2%;
+}
+
+.gal {
+    display: flex;
+}
+
+.gal div img {
+    width: 90%;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+iframe {
+   display: block;
+    margin: auto;
+    padding: 1%;
+}
+
+/* ----------- Bottom Box ------------------ */
+
+aside {
+    justify-content: space-around;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+.bbox {
+    border: 1px solid #737373;
+    margin-bottom: 5%;
+}
+
+/* ----------------FOOTER ------------------- */
+footer {
+    margin-top: 10%;
+}
+
+footer p {
+     text-align: center;
+}
+
+footer {
+    padding: 1%;
+}

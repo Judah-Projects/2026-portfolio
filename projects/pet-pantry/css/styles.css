@@ -1,0 +1,35 @@
+/* Judah Vickers, Lab 14, March 20, 2026 */
+@charset "utf-8";
+
+/* ------BACKGROUND Colors-------- */
+html {
+    background-image: url(../img/rustic-wood-from-pickbest-99099853.jpg);
+/* Rustic wood background from: https://pikbest.com/free-backgrounds/texture.html */
+
+}
+
+header {
+    background-color: #546848;
+}
+
+body {
+    background-color: #f8ecd5;
+}
+
+footer {
+    background-color: #546848;
+}
+
+/* ----------Letter Styling------- */
+header nav ul li a, footer p {
+    color: #f8ecd5;
+    font-size: larger;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+p {
+    font-size: large;
+}
