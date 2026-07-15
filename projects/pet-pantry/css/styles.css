@@ -33,3 +33,28 @@ header nav ul li a, footer p {
 p {
     font-size: large;
 }
+
+/* ------- JavaScript ----------- */
+/* Error highlight */
+input.error {
+    border: 2px solid #d9534f;
+    background-color: #ffe5e5;
+}
+
+.form-message.success {
+    background-color: #5cb85c;
+}
+
+.form-message.error {
+    background-color: #d9534f;
+}
+
+/* Inline field message */
+.field-message {
+    font-size: 0.85rem;
+    color: #d9534f;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+
